@@ -10,7 +10,7 @@ title               = "Arba Sasmoyo"
 pygmentsuseclasses  = true
 disqusshortname     = "asasmoyo-github-io" # Comment out to disable Disqus.
 pluralizelisttitles = false
-googleAnalytics     = "UA-123-45"
+googleAnalytics     = "UA-62145924-10"
 theme               = "cocoa"
 
 [permalinks]
