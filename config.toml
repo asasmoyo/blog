@@ -1,0 +1,35 @@
+baseurl             = "https://asasmoyo.github.io/"
+builddrafts         = false
+canonifyurls        = true
+contentdir          = "content"
+languageCode        = "en-US"
+layoutdir           = "layouts"
+publishdir          = "public"
+author              = "Arba Sasmoyo"
+title               = "Arba Sasmoyo"
+pygmentsuseclasses  = true
+disqusshortname     = "asasmoyo-github-io" # Comment out to disable Disqus.
+pluralizelisttitles = false
+googleAnalytics     = "UA-123-45"
+theme               = "cocoa"
+
+[permalinks]
+fixed = ":title/"
+blog  = "blog/:slug/"
+
+[params]
+author       = "Arba Sasmoyo"
+cachebuster  = true # add the current unix timestamp in query string for cache busting css assets
+dateform     = "Jan 2, 2006"
+dateformfull = "Mon Jan 2 2006 15:04:05 MST"
+description  = "sharing is caring!"
+email        = "a.sasmoyo@mail.ugm.ac.id"
+faviconfile  = "img/leaf.ico"
+github       = "//github.com/asasmoyo"
+highlightjs  = true
+lang         = "en"
+linkedin     = "//linkedin.com/in/asasmoyo"
+
+# gravatar             = "asasmoyo@student.uns.ac.id"     # do not use in the same time as avatar
+avatar               = "images/avatar.jpg"     # path to image in static dir e.g img/avatar.png (do not use in the same time as gravatar)
+highlightjslanguages = ["go"] # additional languages not included in the "common" set
