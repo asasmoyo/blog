@@ -8,7 +8,9 @@ deploy:
   steps:
     - install-packages:
         packages: git ssh-client
-    - lukevivier/gh-pages:
-        token: $GIT_TOKEN
-        domain: asasmoyo.github.io
+    - add-ssh-key:
+        keyname: wercker
+    - faph/git-push:
+        repo: ssh://git@github.com:asasmoyo/asasmoyo.github.io.git
+        branch: master
         basedir: public
