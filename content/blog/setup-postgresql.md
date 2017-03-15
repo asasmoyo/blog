@@ -65,7 +65,7 @@ Change it into
 listen='your_private_ip'
 ```
 
-Then you also need to allow remote connections to access your PostgreSQL instance. To do that open `/etc/postgresql/9.6/main/pg_hba.conf` and add this line in the end of the file
+Then you also need to allow remote connections to access your PostgreSQL instance. To do that open `/etc/postgresql/9.6/main/pg_hba.conf` and add this line to the end of the file
 
 ```bash
 host db_name user_name 0.0.0.0/0 md5
