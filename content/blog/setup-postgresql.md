@@ -71,4 +71,4 @@ Then you also need to allow remote connections to access your PostgreSQL instanc
 host db_name user_name 0.0.0.0/0 md5
 ```
 
-It will allows remote connections from anywhere (notice `0.0.0.0/0`) to access `db_name` with user `user_name`. You can improve the security by changing `0.0.0.0/0` to specific address, like `192.168.1.20/32`.
+It will allows remote connections from anywhere (notice `0.0.0.0/0`) to access `db_name` with user `user_name`. You can improve the security by changing `0.0.0.0/0` to specific address, like `192.168.1.20/32`. Restart the PostgreSQL instance by `sudo systemctl restart postgresql` then your remote clients should be able to connect to your PostgreSQL instance.
