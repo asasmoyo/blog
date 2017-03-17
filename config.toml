@@ -29,7 +29,8 @@ github       = "//github.com/asasmoyo"
 highlightjs  = true
 lang         = "en"
 linkedin     = "//linkedin.com/in/asasmoyo"
+googlewebmastercode = "cSBPpTkkb9PJXo-n7XDDpaBT8dY5fTu8KKt6YW7Ze4Y"
 
 # gravatar             = "asasmoyo@student.uns.ac.id"     # do not use in the same time as avatar
 avatar               = "images/avatar.jpg"     # path to image in static dir e.g img/avatar.png (do not use in the same time as gravatar)
-highlightjslanguages = ["go"] # additional languages not included in the "common" set
+highlightjslanguages = ["go", "bash"] # additional languages not included in the "common" set

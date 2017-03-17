@@ -6,7 +6,7 @@ build:
         flags: --buildDrafts=true
 deploy:
   steps:
-    - install-packages:		
+    - install-packages:
         packages: git-core ssh-client
     - add-ssh-key:
         keyname: wercker
