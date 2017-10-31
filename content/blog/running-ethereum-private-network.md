@@ -1,5 +1,5 @@
 ---
-title: "Ethereum Private Network"
+title: "Running Ethereum Private Network"
 date: 2017-10-31T12:38:12+07:00
 draft: false
 ---
