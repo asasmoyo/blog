@@ -170,7 +170,7 @@ I added `--verbosity=9` so we can easily see if the bootnode is working and othe
 INFO [10-31|21:26:21] UDP listener up                          self=enode://157e68e800266d39015a125f3c20a499cd190940e2a665854e0fb80f62f7c00734acc6eb277c06f0b5cb5840436b0ab3980761e7c58a27bfa052c10560db2bc7@[::]:30301
 ```
 
-`enode://...` is the node's address and `@[::]:30301` means that it runs on all interfaces at port 30301.
+`enode://...` is the bootnode's address and `@[::]:30301` means that it runs on all interfaces at port 30301.
 
 Next we run the node. We can run it by:
 
@@ -181,7 +181,7 @@ geth --networkid=9999 \
     --datadir=node
 ```
 
-Please make sure to adjust the bootnode address. I added `--port=9001` so that we can run multiple nodes in a host, they will run on different ports. If it run ok the bootnode will output something like:
+Please make sure to adjust the bootnode address from bootnode's logs. I added `--port=9001` so that we can run multiple nodes in a host, they will run on different ports. If it runs ok the bootnode will output something like:
 
 ```
 TRACE[10-31|21:40:08] >> PONG/v4                               addr=127.0.0.1:9001 err=nil
