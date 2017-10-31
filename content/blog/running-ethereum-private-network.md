@@ -44,7 +44,7 @@ Creating account in Ethereum is simple, let's use `geth` to create one:
 geth --datadir=accounts account new
 ```
 
-You will then asked to type password. The created account will be saved in `accounts/keystore/UTC--{year}-{month}--{account}`.
+You will then asked to type password. The created account information will be saved in `accounts/keystore/UTC--{year}-{month}--{account}`.
 
 > Make sure to **SAVE THE PASSWORD SECURELY**, because there is no way to retrieve your password once you lost it
 
