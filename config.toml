@@ -35,9 +35,11 @@ share                   = true
 linkedin                = "//linkedin.com/in/asasmoyo"
 github                  = "//github.com/asasmoyo"
 email                   = "[first_name][dot][last_name][at]gmail[dot]com"
-googlewebmastercode     = "MCXYe34PeMl552P1PjzdNyQtO_yhX9mh9lbGHb5dMpY"
 highlightjs             = true
 highlightjslanguages    = ["go", "bash", "json"]
+
+# custom params with custom code
+googlewebmastercode     = "MCXYe34PeMl552P1PjzdNyQtO_yhX9mh9lbGHb5dMpY"
 
 [params.colors]
 identifier = "#527fc1f"
