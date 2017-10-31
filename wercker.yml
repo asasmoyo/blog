@@ -3,7 +3,6 @@ build:
   steps:
     - arjen/hugo-build:
         version: "0.29"
-        flags: --buildDrafts=true
 deploy:
   steps:
     - install-packages:
