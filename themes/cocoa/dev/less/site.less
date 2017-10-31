@@ -31,10 +31,10 @@ body {
     body {
         .justify-content(center); // vertically center all sections
     }
-    
+
     .non-narrow {
         &.zero-top-spacing {
-            padding-top: 0 !important; 
+            padding-top: 0 !important;
         }
     }
 }
@@ -125,6 +125,13 @@ section.header {
         color: @compensated-black;
     }
 
+    h3.self-intro {
+      .heading(1em);
+      font-weight: 400;
+      color: @compensated-black;
+      margin-bottom: 1rem;
+    }
+
     nav {
         font-size: 14px;
         margin-bottom: floor(@vspacing/2);
@@ -137,7 +144,7 @@ section.header {
             .flex-display(inline-flex);
         }
 
-        ul a {
+        ul li {
             margin-left: 6px;
             margin-right: 6px;
 
@@ -150,7 +157,7 @@ section.header {
             }
         }
 
-        ul li {
+        ul a {
             color: @compensated-black;
             font-weight: 500;
             .transition(~'color @{transition-speed-1} @{in-sine}');
@@ -186,7 +193,7 @@ section.header {
                 text-align: left;
             }
 
-            ul li {
+            ul a {
                 color: @gray;
 
                 &:hover {
@@ -232,6 +239,9 @@ section.icons {
                 width: 16px;
                 height: 16px;
             }
+            .flag {
+                border-radius: 50%;
+            }
         }
     }
 }
@@ -265,7 +275,7 @@ section.main {
     .content {
         color: @black-content;
         font-size: @base-font-size;
-        
+
         .title-container {
             .flex-display();
             .justify-content(space-between);
@@ -396,7 +406,7 @@ section.main {
                 .align-items(center);
                 display: list-item;
                 list-style: disc inside;
-                
+
                 .meta {
                     .meta();
                     display: none;
@@ -405,6 +415,17 @@ section.main {
                     text-align: right;
                     margin-right: @vspacing/2;
                 }
+            }
+            .no-bullet {
+                    color: transparent;
+                    font-style: oblique;
+		    margin-top: 2rem;
+		    margin-bottom: 1rem;
+            }
+            .no-bullet .date {
+                    .heading();
+                    .light();
+                    font-style: normal;
             }
         }
     }
@@ -475,7 +496,7 @@ section.main {
 a {
     color: @accent;
     .transition(~'color @{transition-speed-1} @{in-sine}');
-    
+
     &:hover {
         color: @link-hover;
     }

@@ -1,36 +1,53 @@
 baseurl             = "https://asasmoyo.github.io/"
-builddrafts         = false
-canonifyurls        = true
+theme               = "cocoa"
 contentdir          = "content"
 languageCode        = "en-US"
 layoutdir           = "layouts"
 publishdir          = "public"
 author              = "Arba Sasmoyo"
 title               = "Arba Sasmoyo"
-pygmentsuseclasses  = true
-disqusshortname     = "asasmoyo-github-io" # Comment out to disable Disqus.
 pluralizelisttitles = false
+pygmentsuseclasses  = true
+builddrafts         = false
+canonifyurls        = true
+disqusshortname     = "asasmoyo-github-io"
 googleAnalytics     = "UA-62145924-10"
-theme               = "cocoa"
 
 [permalinks]
 fixed = ":title/"
 blog  = "blog/:slug/"
 
 [params]
-author       = "Arba Sasmoyo"
-cachebuster  = true # add the current unix timestamp in query string for cache busting css assets
-dateform     = "Jan 2, 2006"
-dateformfull = "Mon Jan 2 2006 15:04:05 MST"
-description  = "sharing is caring!"
-email        = "[first_name][dot][last_name][at]gmail[dot]com"
-faviconfile  = "img/leaf.ico"
-github       = "//github.com/asasmoyo"
-highlightjs  = true
-lang         = "en"
-linkedin     = "//linkedin.com/in/asasmoyo"
-googlewebmastercode = "cSBPpTkkb9PJXo-n7XDDpaBT8dY5fTu8KKt6YW7Ze4Y"
+author                  = "Arba Sasmoyo"
+selfintro               = ""
+cachebuster             = true
+dateform                = "Jan 2, 2006"
+dateformfull            = "Mon Jan 2 2006 15:04:05 MST"
+description             = "sharing is caring!"
+avatar                  = "images/avatar.png"
+faviconfile             = "img/leaf.ico"
+progressively           = true
+small_banner_logo       = false
+latestpostcount         = 5
+lang                    = "en"
+i18n_flags              = false
+share                   = true
+linkedin                = "//linkedin.com/in/asasmoyo"
+github                  = "//github.com/asasmoyo"
+email                   = "[first_name][dot][last_name][at]gmail[dot]com"
+googlewebmastercode     = "cSBPpTkkb9PJXo-n7XDDpaBT8dY5fTu8KKt6YW7Ze4Y"
+highlightjs             = true
+highlightjslanguages    = ["go", "bash"] # additional languages not included in the "common" set
 
-# gravatar             = "asasmoyo@student.uns.ac.id"     # do not use in the same time as avatar
-avatar               = "images/avatar.png"     # path to image in static dir e.g img/avatar.png (do not use in the same time as gravatar)
-highlightjslanguages = ["go", "bash"] # additional languages not included in the "common" set
+[params.colors]
+identifier = "#527fc1f"
+identifier_dark = "#1a3152"
+trivial = "#6a7a8b"
+foreground = "#181d2a"
+background = "#f9f9f9"
+background_dark = "#282a36"
+code = "#87a5d2"
+type = "#97d28b"
+special = "#ffcb8d"
+value = "#96c2d7"
+statement = "#ff8e91"
