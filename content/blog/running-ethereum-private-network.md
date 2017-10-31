@@ -12,7 +12,7 @@ Typical Ethereum network consists of:
 
 1. Bootnode
 
-    You might be wondering how an Ethereum node can connects to other nodes and broadcast messages. It turns out they have special nodes called bootnode. Basically, they works as node discovery where you can join and ask for other nodes address that you can connect to.
+    You might be wondering how an Ethereum node can connect to other nodes and broadcast messages. It turns out they have special nodes called bootnode. Basically, they works as node discovery where you can join and ask for other nodes addresses that you can connect to.
 
     You can see the default bootnodes value [here](https://github.com/ethereum/go-ethereum/blob/b0ca1b67ce6e297fe02281d01a486225bbf385f8/params/bootnodes.go#L21).
 
