@@ -154,7 +154,7 @@ Please replace `nodeX` with a path where the node will save its data. Let's crea
 
 > We don't need to specify genesis block when initalizing nodes in main network. Because genesis block for the main network is already hard coded in `geth`, see [here](https://github.com/ethereum/go-ethereum/blob/6d6a5a93370371a33fb815d7ae47b60c7021c86a/core/genesis.go#L310).
 
-> We need to initialize all of our nodes with our genesis block because if they use the default genesis block they will not be able to sync to our private networks' blocks.
+> We need to initialize all of our nodes with our genesis block because if they use the default genesis block they will not be able to sync to our private network's blocks.
 
 ## Running all together
 
