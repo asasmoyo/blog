@@ -82,7 +82,7 @@ If you are not familiar with blockchain, basically blockchain consists of many b
 
 The first block in a blockchain is a special block, called genesis block. Unlike other blocks, it doesn't need the hash of the previous block (well, there is no block before it). It sets the hash of the previous block with `0`. It also can give some balance to some addresses.
 
-> You can see Ethereum genesis block here: https://etherscan.io/block/0. See it has `Parent Hash=0`.
+> You can see Ethereum genesis block here: https://etherscan.io/block/0. Notice it has `Parent Hash=0`.
 
 Genesis block in Ethereum is just an `json` file:
 
