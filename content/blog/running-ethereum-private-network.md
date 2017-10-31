@@ -38,7 +38,7 @@ Please download and add the binaries to your `PATH`, in this post I assume all o
 
 Ethereum doesn't need you to register in order to join the network. What you need to do is just create an account which consists of a private key and a public key, with a password for security, then you can just use the address. If you use `geth` to generate an account, both private and public key will be hidden in a weird looking `json` file.
 
-Creating account in Ethereum is simple, you can use `geth` to create some:
+Creating account in Ethereum is simple, let's use `geth` to create one:
 
 ``` bash
 geth --datadir=accounts account new
