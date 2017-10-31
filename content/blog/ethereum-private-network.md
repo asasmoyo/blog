@@ -219,6 +219,17 @@ INFO [10-31|21:48:57] Commit new mining work                   number=3 txs=0 un
 INFO [10-31|21:48:59] Successfully sealed new block            number=3 hash=f688ba…303090
 ```
 
+Notice the node's logs, you should see something like this whenever the miner successfully mine a new block:
+
+```
+INFO [10-31|21:46:45] Imported new chain segment               blocks=2 txs=0 mgas=0.000 elapsed=1.234ms   mgasps=0.000 number=2 hash=c9b5ea…2c638c
+INFO [10-31|21:46:45] Fast sync complete, auto disabling
+INFO [10-31|21:46:48] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=4.415ms      mgasps=0.000 number=3 hash=b53689…b40d46
+INFO [10-31|21:47:14] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=3.285ms      mgasps=0.000 number=4 hash=e69fd2…5cabe7
+```
+
+It shows us that the node just updated its blockchain. Remember, miner can find other nodes via bootnode. So whenever miner successfully mine a new block, it can ask some nodes addresses from bootnode then broadcast the new block to them.
+
 Great! Our private network is now working well. We can see our current balance using console:
 
 ``` bash
