@@ -242,7 +242,7 @@ Now we can check balance of the address used for mining:
 > eth.getBalance('07eafaabd1e6dce571f1931092fc1586b55f896e')
 245000000000000000100 # this one is in 'wei' unit, see http://ethdocs.org/en/latest/ether.html#denominations. Of couse we can convert it to 'ether' unit
 > web3.fromWei(eth.getBalance("07eafaabd1e6dce571f1931092fc1586b55f896e"), 'ether')
-290.0000000000000001 # ez money :p
+290.0000000000000001 # ez money=ez life :p
 ```
 
 > Check this to learn about what you can do in the console: https://github.com/ethereum/wiki/wiki/JavaScript-API
