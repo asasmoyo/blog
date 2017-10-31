@@ -7,4 +7,9 @@
 {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
 
+<!-- Google Webmaster -->
+{{ if .Site.Params.googlewebmastercode }}
+  <meta name="google-site-verification" content="{{ .Site.Params.googlewebmastercode }}" />
+{{ end }}
+
 {{ template "_internal/opengraph.html" . }}
