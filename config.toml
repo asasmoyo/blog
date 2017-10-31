@@ -11,7 +11,7 @@ pygmentsuseclasses  = true
 builddrafts         = false
 canonifyurls        = true
 disqusshortname     = "asasmoyo-github-io"
-googleAnalytics     = "UA-62145924-10"
+googleAnalytics     = "UA-109033209-1"
 
 [permalinks]
 fixed = ":title/"
