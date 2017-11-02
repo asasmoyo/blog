@@ -30,7 +30,7 @@ Actually you can run a node as normal node and miner at the same time. But in th
 
 I'll use Golang version of Ethereum clients. I haven't tried other client implementations but they should also work, maybe...
 
-You can download pre-build binary here: [https://geth.ethereum.org/downloads/](https://geth.ethereum.org/downloads/), please download the latest one with name: `Geth & Tools`. Unlike `Geth`, it contains `geth` and `bootnode` binaries needed for this post.
+You can download pre-built binary here: [https://geth.ethereum.org/downloads/](https://geth.ethereum.org/downloads/), please download the latest one with name: `Geth & Tools`. Unlike `Geth`, it contains `geth` and `bootnode` binaries needed for this post.
 
 Please download and add the binaries to your `PATH`, in this post I assume all of those binary are already included in `PATH`.
 
