@@ -18,9 +18,15 @@ blog  = "blog/:slug/"
 
 [[menu.main]]
 name                   = "About"
-weight                 = -110
+weight                 = 10
 identifier             = "about"
 url                    = "/about/"
+
+[[menu.main]]
+name                   = "Code"
+weight                 = 20
+identifier             = "code"
+url                    = "https://github.com/asasmoyo?tab=repositories"
 
 [params]
 author                  = "Arba Sasmoyo"
