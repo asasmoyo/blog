@@ -14,16 +14,21 @@ disqusshortname     = "asasmoyo-github-io"
 googleAnalytics     = "UA-109033209-1"
 
 [permalinks]
-fixed = ":title/"
 blog  = "blog/:slug/"
+
+[[menu.main]]
+name                   = "About"
+weight                 = -110
+identifier             = "about"
+url                    = "/about/"
 
 [params]
 author                  = "Arba Sasmoyo"
-selfintro               = ""
 cachebuster             = true
 dateform                = "Jan 2, 2006"
 dateformfull            = "Mon Jan 2 2006 15:04:05 MST"
-description             = "sharing is caring!"
+description             = "relax, you are doing fine"
+selfintro               = "relax, you are doing fine"
 avatar                  = "images/avatar.png"
 faviconfile             = "img/leaf.ico"
 progressively           = true
