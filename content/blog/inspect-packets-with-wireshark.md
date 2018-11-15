@@ -17,5 +17,3 @@ First, I checked what interfaces available in the vm:
 ```
 tshark -d
 ```
-
-
