@@ -16,5 +16,6 @@ jobs:
       - run:
           command: |
             curl -v -L https://github.com/gohugoio/hugo/releases/download/v$(cat .hugoversion)/hugo_$(cat .hugoversion)_Linux-64bit.tar.gz -o hugo.tar.gz
+            mkdir -p hugo
             tar -xzvf hugo.tar.gz -C hugo
             ./hugo/hugo -v
