@@ -1,0 +1,20 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: alpine:3.8
+    steps:
+      - run:
+          command: |
+            apk add --no-cache curl tar git
+      - checkout
+      - run:
+          command: |
+            git submodule init
+            git submodule update
+            git clone https://${GITHUB_TOKEN}@github.com/asasmoyo/asasmoyo.github.io asasmoyo.github.io
+      - run:
+          command: |
+            curl -v https://github.com/gohugoio/hugo/releases/download/v$(cat .hugoversion)/hugo_$(cat .hugoversion)_Linux-64bit.tar.gz -o hugo.tar.gz
+            tar -xzvf hugo.tar.gz
+            ./hugo/hugo -v
