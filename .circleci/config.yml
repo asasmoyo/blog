@@ -15,6 +15,6 @@ jobs:
             git clone https://${GITHUB_TOKEN}@github.com/asasmoyo/asasmoyo.github.io asasmoyo.github.io
       - run:
           command: |
-            curl -v https://github.com/gohugoio/hugo/releases/download/v$(cat .hugoversion)/hugo_$(cat .hugoversion)_Linux-64bit.tar.gz -o hugo.tar.gz
+            curl -v -L https://github.com/gohugoio/hugo/releases/download/v$(cat .hugoversion)/hugo_$(cat .hugoversion)_Linux-64bit.tar.gz -o hugo.tar.gz
             tar -xzvf hugo.tar.gz
             ./hugo/hugo -v
