@@ -6,7 +6,7 @@ jobs:
     steps:
       - run:
           command: |
-            apk add --no-cache curl tar git
+            apk add --no-cache curl tar git openssh-client
       - checkout
       - run:
           command: |
