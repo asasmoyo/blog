@@ -19,6 +19,8 @@ jobs:
             tar -xzvf hugo.tar.gz -C hugo
             ./hugo/hugo
 
-            rsync -av --delete --exclude '.git/' --exclude '.ssh/' "$(pwd)/public" "$(pwd)/asasmoyo.github.io"
+            rsync -av --delete --exclude '.git/' --exclude '.ssh/' "$(pwd)/public/" "$(pwd)/asasmoyo.github.io"
             cd "$(pwd)/asasmoyo.github.io"
+            git add --all
+            git commit -m "some updates"
             git push origin master
