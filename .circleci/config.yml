@@ -19,6 +19,9 @@ jobs:
             tar -xzvf hugo.tar.gz -C hugo
             ./hugo/hugo
 
+            git config --global user.email "arba.sasmoyo@gmail.com"
+            git config --global user.name "Arba Sasmoyo"
+
             rsync -av --delete --exclude '.git/' --exclude '.ssh/' "$(pwd)/public/" "$(pwd)/asasmoyo.github.io"
             cd "$(pwd)/asasmoyo.github.io"
             git add --all
