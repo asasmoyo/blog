@@ -1,53 +1,38 @@
-baseurl             = "https://asasmoyo.github.io/"
-theme               = "cocoa"
-contentdir          = "content"
-languageCode        = "en-US"
-layoutdir           = "layouts"
-publishdir          = "public"
-author              = "Arba Sasmoyo"
-title               = "Arba Sasmoyo"
-pluralizelisttitles = false
-pygmentsuseclasses  = true
-builddrafts         = false
-canonifyurls        = true
-disqusshortname     = "asasmoyo-github-io"
-googleAnalytics     = "UA-109033209-1"
+baseurl = "https://asasmoyo.github.com"
+languageCode = "en"
+title = "relax, you're probably doing just fine"
+theme = "kiss"
+disqusShortname = "asasmoyo-github-io"
+googleAnalytics = "UA-109033209-1"
+# Number of posts per page
+Paginate = 5
+enableRobotsTXT = true
 
-[permalinks]
-blog  = "blog/:slug/"
+[params.features]
+disqusOnDemand = true  # Load Disqus comments on click
 
-[[menu.main]]
-name                   = "About"
-weight                 = 10
-identifier             = "about"
-url                    = "/about/"
+[params.rss]
+includeContent = true # Includes whole content in rss
+authorName = "Arba Sasmoyo" # Site author's full name
+authorEmail = "arba.sasmoyo@gmail.com"
 
-[[menu.main]]
-name                   = "Code"
-weight                 = 20
-identifier             = "code"
-url                    = "https://github.com/asasmoyo?tab=repositories"
+[params.info]
+adsense = "" # Adsense ID (ID only, without ca-pub-)
+enableSocial = false # Adds OpenGraph and Twitter cards
+homeTitle = "" # Title for home page
+poweredby = false # Adds powered by Hugo and Kiss below Copyright section
+related = true # Includes related articles
 
-[params]
-author                  = "Arba Sasmoyo"
-cachebuster             = true
-dateform                = "Jan 2, 2006"
-dateformfull            = "Mon Jan 2 2006 15:04:05 MST"
-description             = "relax, you are doing fine"
-selfintro               = "relax, you are doing fine"
-avatar                  = "images/avatar.png"
-faviconfile             = "img/leaf.ico"
-progressively           = true
-small_banner_logo       = false
-latestpostcount         = 5
-lang                    = "en"
-i18n_flags              = false
-share                   = true
-linkedin                = "//linkedin.com/in/asasmoyo"
-github                  = "//github.com/asasmoyo"
-email                   = "arba[dot]sasmoyo[at]gmail[dot]com"
-highlightjs             = true
-highlightjslanguages    = ["go", "bash", "json"]
+[params.social]
+github = "asasmoyo"
+email = "arba.sasmoyo@gmail.com"
+linkedin = "asasmoyo"
 
-# custom params with custom code
-googlewebmastercode     = "MCXYe34PeMl552P1PjzdNyQtO_yhX9mh9lbGHb5dMpY"
+[params.social.config]
+platforms = ["email","github","linkedin"]
+
+[taxonomies]
+tag ="tags"
+
+[blackfriday]
+hrefTargetBlank = true
