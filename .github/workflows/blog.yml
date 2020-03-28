@@ -15,3 +15,5 @@ jobs:
 
       - name: Publish blog
         run: make publish
+        env:
+          PUBLISH_REPO_TOKEN: ${{ secrets.PUBLISH_REPO_TOKEN }}
