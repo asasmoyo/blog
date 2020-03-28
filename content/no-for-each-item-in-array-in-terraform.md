@@ -1,5 +1,5 @@
 ---
-title: "No for Each Item in Array in Terraform"
+title: "No `for_each` Item in Array in Terraform"
 date: 2020-03-28T17:15:23+07:00
 tags: ["til", "terraform"]
 ---

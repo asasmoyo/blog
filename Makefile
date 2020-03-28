@@ -7,7 +7,7 @@ build:
 	@scripts/install_hugo.sh
 	@${HUGO} --minify
 
-serve:
+serve: build
 	@${HUGO} server
 
 clean:
