@@ -19,6 +19,10 @@ git config --global user.name "Arba Sasmoyo"
 
 rsync -av --delete --exclude '.git/' --exclude '.ssh/' "$(pwd)/public/" "$(pwd)/temp/asasmoyo.github.io"
 pushd temp/asasmoyo.github.io
+    # remove default icons
+    rm -v *.png
+    rm -v favicon.ico
+
     git add --all
     git commit -m "Some updates"
     git push origin master
