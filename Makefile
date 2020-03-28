@@ -1,8 +1,11 @@
 HUGO='bin/hugo'
 
 build:
+	@git submodule init
+	@git submodule update
+
 	@scripts/install_hugo.sh
-	@${HUGO}
+	@${HUGO} --minify
 
 serve:
 	@${HUGO} server
@@ -13,3 +16,6 @@ clean:
 update-theme:
 	@git submodule init
 	@git submodule update --remote
+
+publish: build
+	@scripts/publish.sh

@@ -1,0 +1,24 @@
+name: blog
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+
+      - name: Install rsync
+        run: |
+          sudo apt update
+          sudo apt install -y rsync
+
+      - name: Publish blog
+        run:
+          make build
+          make publish
