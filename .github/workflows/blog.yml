@@ -19,6 +19,4 @@ jobs:
           sudo apt install -y rsync
 
       - name: Publish blog
-        run: |
-          make build
-          make publish
+        run: make publish
