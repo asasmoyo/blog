@@ -20,6 +20,7 @@ enableSocial = false # Adds OpenGraph and Twitter cards
 homeTitle = "relax, you're probably doing fine" # Title for home page
 poweredby = false # Adds powered by Hugo and Kiss below Copyright section
 related = true # Includes related articles
+codeCopy = true # Add copy button above code blocks
 
 [params.social]
 github = "asasmoyo"
