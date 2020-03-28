@@ -13,10 +13,5 @@ jobs:
         with:
           submodules: true
 
-      - name: Install rsync
-        run: |
-          sudo apt update
-          sudo apt install -y rsync
-
       - name: Publish blog
         run: make publish
