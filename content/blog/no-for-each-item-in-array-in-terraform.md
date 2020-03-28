@@ -1,6 +1,7 @@
 ---
 title: "No for Each Item in Array in Terraform"
 date: 2020-03-28T17:15:23+07:00
+tags: ["til", "terraform"]
 ---
 
 I was importing my team's PagerDuty setup into Terraform today. There are 6 people in PagerDuty users so I thought, I would create locals block with users as array of map containing each name and email. Then I'd feed `local.users` into `pagerduty_user` resource using `for_each`.

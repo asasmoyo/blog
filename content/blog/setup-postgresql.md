@@ -2,6 +2,7 @@
 date = "2017-03-14T21:33:58+07:00"
 title = "Setup PostgreSQL on Ubuntu 16.04"
 draft = false
+tags = ["postgresql"]
 +++
 
 ### Install PostgreSQL

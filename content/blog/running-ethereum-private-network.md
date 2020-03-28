@@ -2,6 +2,7 @@
 title: "Running Ethereum Private Network"
 date: 2017-10-31T12:38:12+07:00
 draft: false
+tags: ["ethereum"]
 ---
 
 One good way to understand Ethereum is by creating your own Ethereum private network. I have been trying to understand Ethereum in the past few weeks and I learned a lot of things just by creating it. I'll now write down what I got from creating Ethereum private network. And I'll update this post as I learn new things... hopefully

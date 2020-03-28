@@ -2,6 +2,7 @@
 title: "Konfigurasi Replikasi di PostgreSQL 11"
 date: 2018-10-21T13:45:33+07:00
 draft: false
+tags: ["postgresql"]
 ---
 
 Yay PostgreSQL 11 baru saja keluar bulan lalu (lihat [di sini](https://news.ycombinator.com/item?id=18248050) untuk diskusi HN). Yuk kita coba mengkonfigurasi replikasi di PostgreSQL 11.
