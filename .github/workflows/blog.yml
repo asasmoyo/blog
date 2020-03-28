@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  deploy:
+  publish:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
@@ -19,6 +19,6 @@ jobs:
           sudo apt install -y rsync
 
       - name: Publish blog
-        run:
+        run: |
           make build
           make publish

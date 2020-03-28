@@ -17,5 +17,5 @@ update-theme:
 	@git submodule init
 	@git submodule update --remote
 
-publish: build
-	@scripts/publish.sh
+publish:
+	@scripts/publish_ci.sh

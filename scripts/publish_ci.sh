@@ -1,5 +1,16 @@
 #!/usr/bin/env bash
-mkdir -p temp
+version="$(cat .hugoversion)"
+download_url="https://github.com/gohugoio/hugo/releases/download/v${version}/hugo_${version}_linux-64bit.tar.gz"
+
+mkdir -p temp bin
+curl "${download_url}" -o temp/hugo.tar.gz -L
+pushd temp
+    tar -xzvf hugo.tar.gz
+    mv hugo ../bin/
+popd
+
+bin/hugo --minify
+
 rm -rf temp/asasmoyo.github.io
 git clone https://${PUBLISH_REPO_TOKEN}@github.com/asasmoyo/asasmoyo.github.io temp/asasmoyo.github.io
 

@@ -14,5 +14,3 @@ pushd temp
     tar -xzvf hugo.tar.gz
     mv hugo ../bin/
 popd
-
-rm -rf temp
