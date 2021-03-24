@@ -1,0 +1,27 @@
+baseurl: "https://asasmoyo.github.io"
+languageCode: "en-us"
+title: "relax, you're probably doing fine"
+theme: "hugo-tania"
+
+params:
+  socialOptions:
+    github: https://github.com/asasmoyo
+    linkedin: https://www.linkedin.com/in/asasmoyo
+
+menu:
+  header:
+    - name: Articles
+      url: "/articles/"
+    - name: Tags
+      url: "/tags/"
+  footer:
+    - name: RSS
+      url: "/articles/index.xml"
+
+markup:
+  highlight:
+    noClasses: false
+    lineNos: true
+  goldmark:
+    renderer:
+      unsafe: true
